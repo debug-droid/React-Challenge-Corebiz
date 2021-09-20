@@ -12,9 +12,9 @@ const Home = () => {
       <Icones></Icones>
       <section>
         <nav className="bottons">
-          <button className={`btn ${type == 'livros'? 'btn-active' : 'btn-inactive'}`} onClick={() => setType('livros')}>Livros</button>
-          <button className={`btn ${type == 'filmes'? 'btn-active' : 'btn-inactive'}`} onClick={() => setType('filmes')}>Filmes</button>
-          <button className={`btn ${type == 'series'? 'btn-active' : 'btn-inactive'}`} onClick={() => setType('series')}>Séries</button>
+          <button className={`btn ${type === 'livros'? 'btn-active' : 'btn-inactive'}`} onClick={() => setType('livros')}>Livros</button>
+          <button className={`btn ${type === 'filmes'? 'btn-active' : 'btn-inactive'}`} onClick={() => setType('filmes')}>Filmes</button>
+          <button className={`btn ${type ==='series'? 'btn-active' : 'btn-inactive'}`} onClick={() => setType('series')}>Séries</button>
         </nav>
         <Grid type={type}></Grid>
       </section>
